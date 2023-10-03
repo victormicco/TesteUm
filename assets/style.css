@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffffffc7;
+}
+
+h1 {
+  text-align: center;
+}
+div,
+.container-interno {
+  margin: 0 auto; /* Centraliza horizontalmente a div.container-interno */
+  text-align: center;
+}
+
+/* Estilize o switch e o controle deslizante */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  left: 40%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e8c4f8; /* Cor de fundo padrão do switch desativado */
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;/* Cor de fundo do controle deslizante */
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #9535c1; /* Cor de fundo do switch ativado */
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(16px);
+}
+
+#containerInt {
+  height: 25px;
+  border-radius: 7px;
+
+  border: none;
+}
+
+#botao:hover {
+  color: #9535c1;
+  scale: 1.1;
+}
+img {
+  width: 5%;
+  max-width: 80px;
+  position: absolute;
+  left: 3%;
+}
+#containerInt{
+  width: 200px;
+}
+#botao {
+  
+  color: grey;
+  border: none;
+  height: 30px;
+  background: none;
+  position: absolute;
+}
+/* li{
+  list-style-type: none;
+  text-decoration: underline;
+} */

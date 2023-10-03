@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="livro.svg" type="image/x-icon">
+    <script defer src="interacao.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="details">
+    <img src="livro.svg" alt="dicionario" id="dicionario">
+    <label class="switch">
+    <input type="checkbox" name="theme" id="temaLD">
+    <span class="slider"></span>
+</div>
+</label>
+
+    <div class="container">
+        <h1 id="agaUm"> Dictionary </h1>
+        <div class="container-interno" >
+            <input type="text" placeholder="&nbsp;Write a word" id="containerInt"> 
+            <button id="botao" onclick="teste()"> <i class="fas fa-search"></i></button>
+            
+        </div>
+        <h2 id="resposta">Search a any word</h2>
+        <h3>Definition</h3>
+        <ol>
+            <li id="algoUm"></li>
+            <li id="algoDois"></li>
+        </ol>
+        
+    </div>
+</body>
+</html>
